@@ -9,12 +9,12 @@ import com.example.todolist_recyclerview.R
 import com.example.todolist_recyclerview.models.TodoData
 import java.math.MathContext
 
-class TodoRecyclerVIewAdapter(val mathContext: MathContext: Context, val mList: List<TodoData>) :
+class TodoRecyclerVIewAdapter(val mContext : Context, val mList: List<TodoData>) :
     RecyclerView.Adapter<TodoRecyclerVIewAdapter.MyViewHolder>() {
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
-        val row = LayoutInflater.from(mathContext).inflate(R.layout.todo_list_item, parent, false)
+        val row = LayoutInflater.from(mContext).inflate(R.layout.todo_list_item, parent, false)
         return MyViewHolder(row)
     }
 
