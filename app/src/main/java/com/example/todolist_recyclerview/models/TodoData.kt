@@ -6,7 +6,7 @@ class TodoData (
     val rating : Double,
     val todoTitle : String,
     val place : String,
-    val isFinished : Boolean,
+    var isFinished : Boolean,
 
         ) : Serializable {
 }
