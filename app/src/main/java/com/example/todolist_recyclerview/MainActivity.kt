@@ -20,9 +20,7 @@ class MainActivity : AppCompatActivity() {
 
     }
     private fun  setValues() {
-        mPagerAdapter = MainViewPagerAdapter(supportFragmentManager)
-        viewPager.adapter = mPagerAdapter
-
-        mainTabLayout.setupWithViewPager(viewPager)
+        mPagerAdapter = MainViewPagerAdapter(this)
+        mainViewPage.adapter = mPagerAdapter
     }
 }
