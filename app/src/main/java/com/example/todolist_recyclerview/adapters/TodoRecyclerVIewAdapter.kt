@@ -19,7 +19,7 @@ class TodoRecyclerVIewAdapter(val mContext : Context, val mList: List<TodoData>)
     }
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
-        TODO("Not yet implemented")
+        holder.bind(mList[position])
     }
 
     override fun getItemCount(): Int {
@@ -27,6 +27,8 @@ class TodoRecyclerVIewAdapter(val mContext : Context, val mList: List<TodoData>)
     }
 
     inner class MyViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+        fun bind(item : TodoData) {
 
+        }
     }
 }
