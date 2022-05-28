@@ -57,8 +57,9 @@ class TodoRecyclerVIewAdapter(val mContext: Context, val mList: List<TodoData>) 
                 }
 
                 itemView.setOnClickListener {
+
                     val myIntent = Intent(mContext, DetailTodoActivity::class.java)
-                    myIntent.putExtra("TodoData",item)
+                    myIntent.putExtra("TodoData", item)
                     mContext.startActivity(myIntent)
 
                 }
